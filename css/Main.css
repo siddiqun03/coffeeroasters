@@ -151,12 +151,11 @@ header {
   opacity: 0.5;
 }
 /*  Part Hero  */
-.hero-container{
+.hero-container {
   padding: 100px 50px;
- background: url('../images/hero_img.jpg');
- background-repeat: no-repeat;
- background-size: 1280px 600px;
-
+  background: url("../images/hero_img.jpg");
+  background-repeat: no-repeat;
+  background-size: 1280px 600px;
 }
 .hero-left {
   width: 540px;
@@ -193,6 +192,65 @@ header {
   line-height: 25px;
   text-align: center;
   color: #fefcf7;
-  background-color: #66D2CF;
+  background-color: #66d2cf;
   cursor: pointer;
 }
+/* services ↓ */
+.container-services {
+  width: 1275px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url("../images/services_bg-img.png");
+  background-repeat: no-repeat;
+  background-size: 1111px 196px;
+  background-position-x: 50%;
+}
+.services_box {
+  width: 255px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.gran::before{
+  content: url(../images/kopi1.png);
+  margin-bottom: 40px;
+}
+.planalto::before{
+  content: url(../images/kopi2.png);
+  margin-bottom: 40px;
+}
+.piccollo::before{
+content: url(../images/kopi3.png);
+margin-bottom: 40px;
+}
+.danche::before{
+content: url(../images/kopi4.png);
+margin-bottom: 40px;
+}
+.services-heading {
+  width: 255px;
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  font-family: Fraunces 9pt;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #333d4b;
+}
+.services-desc {
+  margin: 0;
+  padding: 0;
+  font-family: Barlow;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #333d4b;
+}
+/* Why choose us ? */
