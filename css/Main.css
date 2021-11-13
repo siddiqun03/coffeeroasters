@@ -71,7 +71,7 @@
 *::after {
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -192,7 +192,7 @@ header {
 .button {
   margin: 0;
   padding: 15px 31px;
-  font-family: Fraunces ;
+  font-family: Fraunces;
   font-weight: 900;
   font-size: 18px;
   line-height: 25px;
@@ -204,10 +204,10 @@ header {
   /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
   cursor: pointer;
 }
-.button:hover{
+.button:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 2.4px 2.4px 3.2px;
 }
-.button:active{
+.button:active {
   opacity: 0.7;
   box-shadow: #59bab6 3px 3px 6px 0px inset, #4bb6b3 -3px -3px 6px 1px inset;
 }
@@ -251,7 +251,7 @@ header {
   margin: 0;
   margin-bottom: 24px;
   padding: 0;
-  font-family: Fraunces ;
+  font-family: Fraunces;
   font-style: normal;
   font-weight: 900;
   font-size: 24px;
@@ -336,7 +336,7 @@ header {
 }
 .services-box-header {
   margin: 0 0 25px 0;
-  font-family: Fraunces ;
+  font-family: Fraunces;
   font-weight: 900;
   font-size: 24px;
   line-height: 32px;
@@ -351,12 +351,14 @@ header {
   text-align: center;
   color: #fefcf7;
 }
-.services-box-item:hover{
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+.services-box-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   cursor: pointer;
 }
-.services-box-item:active{
-  box-shadow: #159795b8 12px 14px 12px 0px inset, #159795b8 12px 14px 12px 0px inset;
+.services-box-item:active {
+  box-shadow: #159795b8 12px 14px 12px 0px inset,
+    #159795b8 12px 14px 12px 0px inset;
 }
 /* eND services */
 /* MAKE A COFFEE WITH US */
@@ -369,7 +371,7 @@ header {
   flex-direction: column;
 }
 .make-coffee-header {
-  font-family: Fraunces ;
+  font-family: Fraunces;
   font-weight: 900;
   font-size: 24px;
   line-height: 32px;
@@ -378,7 +380,6 @@ header {
 }
 .make-coffee-box {
   text-align: left;
-
 }
 .make-coffee-list {
   width: 1085px;
@@ -397,7 +398,7 @@ header {
 .makee-coffee-num {
   margin: 0 0 38px 0;
   padding: 0;
-  font-family: Fraunces ;
+  font-family: Fraunces;
   font-weight: 900;
   font-size: 72px;
   line-height: 72px;
@@ -407,7 +408,7 @@ header {
   width: 255px;
   margin: 0 0 42px 0;
   padding: 0;
-  font-family: Fraunces ;
+  font-family: Fraunces;
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
@@ -427,35 +428,95 @@ header {
 }
 /* END MAKE A COFFEE WITH US */
 /* FOOTER */
-.footer-container{
+.footer-container {
   padding: 20px 100px 10px 100px;
-  background: #2C343E;
+  background: #2c343e;
   display: flex;
   align-items: center;
 }
-.footer-left{
+.footer-left {
   display: flex;
   align-items: center;
   width: 681px;
 }
-.nav-footer-list{
+.nav-footer-list {
   padding: 0;
   margin: 0 0 0 auto;
 }
-.footer-links{
+.footer-links {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
-.icon-footer{
+.icon-footer {
   mix-blend-mode: luminosity;
 }
-.footer-link + .footer-link{
+.footer-link + .footer-link {
   margin-left: 20px;
 }
-.icon-footer:hover{
+.icon-footer:hover {
   mix-blend-mode: normal;
 }
-.icon-footer:active{
+.icon-footer:active {
   mix-blend-mode: luminosity;
+}
+/* ABOUT US */
+.about-us-hero {
+  background-image: url(../images/about-us-hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 1280px 450px;
+}
+.about-us-hero-left {
+  width: 445px;
+  margin: 0;
+  padding: 136px 85px;
+}
+.about-us-header {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: Fraunces;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #fefcf7;
+}
+.about-us-desc {
+  width: 445px;
+  margin: 0;
+  padding: 0;
+  font-family: Barlow;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fefcf7;
+}
+.about-us-commitment {
+  padding: 168px 100px;
+  display: flex;
+  align-items: center;
+}
+.commitment-right {
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+.commitment-header {
+  margin: 0;
+  padding: 0;
+  font-family: Fraunces;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #333d4b;
+}
+.commitment-desc {
+  width: 540px;
+  margin: 0;
+  padding: 0;
+  font-family: Barlow;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333d4b;
 }
