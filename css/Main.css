@@ -71,6 +71,9 @@
 *::after {
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   margin-top: 100px;
@@ -87,8 +90,8 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   width: 100%;
   background-color: #ffffff;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
@@ -205,6 +208,7 @@ header {
   box-shadow: rgba(0, 0, 0, 0.3) 2.4px 2.4px 3.2px;
 }
 .button:active{
+  opacity: 0.7;
   box-shadow: #59bab6 3px 3px 6px 0px inset, #4bb6b3 -3px -3px 6px 1px inset;
 }
 /* collaction ↓ */
