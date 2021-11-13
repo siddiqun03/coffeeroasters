@@ -67,8 +67,8 @@
       format("truetype"); /* Safari, Android, iOS */
 }
 *,
-::before,
-::after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 body {
@@ -92,6 +92,7 @@ header {
   width: 100%;
   background-color: #ffffff;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
 }
 .visually_hidden {
   position: absolute;
@@ -122,7 +123,8 @@ header {
 .logo-pic:active {
   opacity: 1;
 }
-.nav-list {
+.nav-list,
+.nav {
   display: flex;
   margin-left: auto;
   align-items: center;
@@ -140,8 +142,9 @@ header {
   color: #83888f;
 }
 .link-item {
-  padding: 20px 30px;
+  padding: 20px 10px;
   opacity: 0.5;
+  cursor: pointer;
   text-decoration: none;
 }
 .link-item:hover {
@@ -168,7 +171,7 @@ header {
 .hero-heading {
   width: 540px;
   margin: 0 0 30px 0;
-  font-family: Fraunces 9pt;
+  font-family: Fraunces;
   font-weight: 900;
   font-size: 72px;
   line-height: 72px;
@@ -186,21 +189,29 @@ header {
 .button {
   margin: 0;
   padding: 15px 31px;
-  font-family: Fraunces 9pt;
+  font-family: Fraunces ;
   font-weight: 900;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
   color: #fefcf7;
   background-color: #66d2cf;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
   cursor: pointer;
 }
-/* services ↓ */
-.container-services {
+.button:hover{
+  box-shadow: rgba(0, 0, 0, 0.3) 2.4px 2.4px 3.2px;
+}
+.button:active{
+  box-shadow: #59bab6 3px 3px 6px 0px inset, #4bb6b3 -3px -3px 6px 1px inset;
+}
+/* collaction ↓ */
+.container-collaction {
   width: 1275px;
   padding-top: 120px;
   padding-bottom: 120px;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -209,34 +220,34 @@ header {
   background-size: 1111px 196px;
   background-position-x: 50%;
 }
-.services_box {
+.collaction_box {
   width: 255px;
   text-align: center;
   display: flex;
   flex-direction: column;
 }
-.gran::before{
+.gran::before {
   content: url(../images/kopi1.png);
   margin-bottom: 40px;
 }
-.planalto::before{
+.planalto::before {
   content: url(../images/kopi2.png);
   margin-bottom: 40px;
 }
-.piccollo::before{
-content: url(../images/kopi3.png);
-margin-bottom: 40px;
+.piccollo::before {
+  content: url(../images/kopi3.png);
+  margin-bottom: 40px;
 }
-.danche::before{
-content: url(../images/kopi4.png);
-margin-bottom: 40px;
+.danche::before {
+  content: url(../images/kopi4.png);
+  margin-bottom: 40px;
 }
-.services-heading {
+.collaction-heading {
   width: 255px;
   margin: 0;
   margin-bottom: 24px;
   padding: 0;
-  font-family: Fraunces 9pt;
+  font-family: Fraunces ;
   font-style: normal;
   font-weight: 900;
   font-size: 24px;
@@ -244,7 +255,7 @@ margin-bottom: 40px;
   text-align: center;
   color: #333d4b;
 }
-.services-desc {
+.collaction-desc {
   margin: 0;
   padding: 0;
   font-family: Barlow;
@@ -253,4 +264,194 @@ margin-bottom: 40px;
   text-align: center;
   color: #333d4b;
 }
-/* Why choose us ? */
+/* End collaction */
+/* Why choose us ? ↓ */
+.services_container {
+  padding: 100px 0 317px;
+  text-align: center;
+  position: relative;
+  background-color: #2c343e;
+}
+.services-top {
+  width: 540px;
+  margin: 0 auto;
+}
+.services-hesder {
+  font-family: Fraunces;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #fefcf7;
+}
+.services-desc {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #fefcf7;
+  opacity: 0.8;
+}
+.services_box {
+  position: absolute;
+  left: 50px;
+  bottom: -150px;
+}
+.services-box-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.services-box-item {
+  width: 350px;
+  padding: 48px 47px;
+  display: flex;
+  flex-direction: column;
+  background: #0e8784;
+  border-radius: 8px;
+}
+.services-box-item + .services-box-item {
+  margin-left: 30px;
+}
+.quality::before {
+  content: url(../images/coffee-bean.png);
+  margin-bottom: 30px;
+}
+.benefits::before {
+  content: url(../images/Combined-Shape.png);
+  margin-bottom: 30px;
+}
+.shipping::before {
+  content: url(../images/Combined-Shape-end.png);
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.services-box-header {
+  margin: 0 0 25px 0;
+  font-family: Fraunces ;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #fefcf7;
+}
+.services-box-desc {
+  margin: 0;
+  font-family: Barlow;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #fefcf7;
+}
+.services-box-item:hover{
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  cursor: pointer;
+}
+.services-box-item:active{
+  box-shadow: #159795b8 12px 14px 12px 0px inset, #159795b8 12px 14px 12px 0px inset;
+}
+/* eND services */
+/* MAKE A COFFEE WITH US */
+.meke-coffee-container {
+  width: 1085px;
+  padding-top: 240px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.make-coffee-header {
+  font-family: Fraunces ;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: left;
+  color: #83888f;
+}
+.make-coffee-box {
+  text-align: left;
+
+}
+.make-coffee-list {
+  width: 1085px;
+  padding: 40px 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 30px;
+}
+.make-coffee-item {
+  width: 285px;
+  margin: 0 100px 30px -30px;
+  padding: 0;
+}
+.makee-coffee-num {
+  margin: 0 0 38px 0;
+  padding: 0;
+  font-family: Fraunces ;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fdd6ba;
+}
+.make-coffee-header {
+  width: 255px;
+  margin: 0 0 42px 0;
+  padding: 0;
+  font-family: Fraunces ;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333d4b;
+}
+.make-coffee-desc {
+  width: 285px;
+  margin: 0;
+  padding: 0;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333d4b;
+}
+/* END MAKE A COFFEE WITH US */
+/* FOOTER */
+.footer-container{
+  padding: 20px 100px 10px 100px;
+  background: #2C343E;
+  display: flex;
+  align-items: center;
+}
+.footer-left{
+  display: flex;
+  align-items: center;
+  width: 681px;
+}
+.nav-footer-list{
+  padding: 0;
+  margin: 0 0 0 auto;
+}
+.footer-links{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.icon-footer{
+  mix-blend-mode: luminosity;
+}
+.footer-link + .footer-link{
+  margin-left: 20px;
+}
+.icon-footer:hover{
+  mix-blend-mode: normal;
+}
+.icon-footer:active{
+  mix-blend-mode: luminosity;
+}
